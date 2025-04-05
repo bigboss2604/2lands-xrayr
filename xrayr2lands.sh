@@ -56,17 +56,17 @@ install_XrayR() {
 
 makeConfig() {
     echo "---------------"
-	read -p "Nhập loại website của bạn ( V2board, SsPanel ) :" airPanel
+	read -p "Nhập loại website của bạn ( V2board, SsPanel ) :" V2board
 	echo "---------------"
-	read -p "Nhập link website ( https://2lands.me ) :" airWebsite
+	read -p "Nhập link website ( https://2lands.me ) :" http://103.136.150.115
 	echo "---------------"
-	read -p "API key của web :" airAPIKey
+	read -p "API key của web :" adminadminadminadmin
 	echo "---------------"
 	read -p "Số node ID :" makeNodeID
 	echo "---------------"
-	read -p "Giới hạn số thiết bị, nếu không muốn giới hạn hãy nhập 0 :" makeLimitdevice
+	read -p "Giới hạn số thiết bị, nếu không muốn giới hạn hãy nhập 0 :" 
 	echo "---------------"
-	read -p "Giới hạn tốc độ, nếu không muốn giới hạn nhập 0 :" makeSpeedlimit
+	read -p "Giới hạn tốc độ, nếu không muốn giới hạn nhập 0 :" 
 	echo "---------------"
 
 	rm -f /etc/XrayR/config.yml
@@ -94,8 +94,8 @@ Nodes:
   -
     PanelType: "$airPanel" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
     ApiConfig:
-      ApiHost: "$airWebsite"
-      ApiKey: "$airAPIKey"
+      ApiHost: "$http://103.136.150.115"
+      ApiKey: "$adminadminadminadmin"
       NodeID: $makeNodeID
       NodeType: V2ray # Node type: V2ray, Trojan, Shadowsocks, Shadowsocks-Plugin
       Timeout: 10 # Timeout for the api request
